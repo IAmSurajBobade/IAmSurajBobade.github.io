@@ -161,7 +161,9 @@ h1{
     vertical-align: middle;
 }
 
-
+.col-md-4 img, .col-xs-4 img{
+  padding: 3px;
+}
   /*--copyright ---*/
   #copyright
   {
