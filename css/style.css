@@ -1,51 +1,69 @@
  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-body {
-      position: relative;
-      background-color: #3c3c3d;
-      font-family: 'Source Sans Pro', sans-serif;
-}
-  
-a{
-  color: #000;
-}
-td {
-    padding: 15px;
-    text-align: center;
-}
-h1 > .fa{
-    color: #5bc0de !important;
-}
-.main-head{
-  font-size: 25px;
-}
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 2s;
-  animation-name: animatebottom;
-  animation-duration: 2s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
-#skills svg{
-  width: 50px;
-  height: 60px;
-}
-/*preloader
+ 
+ body {
+     position: relative;
+     background-color: #3c3c3d;
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ a {
+     color: #000;
+ }
+ 
+ td {
+     padding: 15px;
+     text-align: center;
+ }
+ 
+ h1 > .fa {
+     color: #fff !important;
+ }
+ 
+ .main-head {
+     font-size: 25px;
+ }
+ /* Add animation to "page content" */
+ 
+ .animate-bottom {
+     position: relative;
+     -webkit-animation-name: animatebottom;
+     -webkit-animation-duration: 2s;
+     animation-name: animatebottom;
+     animation-duration: 2s
+ }
+ 
+ @-webkit-keyframes animatebottom {
+     from {
+         bottom: -100px;
+         opacity: 0
+     }
+     to {
+         bottom: 0px;
+         opacity: 1
+     }
+ }
+ 
+ @keyframes animatebottom {
+     from {
+         bottom: -100px;
+         opacity: 0
+     }
+     to {
+         bottom: 0;
+         opacity: 1
+     }
+ }
+ 
+ #myDiv {
+     display: none;
+     text-align: center;
+ }
+ 
+ #skills svg {
+     width: 50px;
+     height: 60px;
+ }
+ /*preloader
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -57,177 +75,246 @@ h1 > .fa{
   z-index: 9999;
   background: url(images/Preloader_2.gif) center no-repeat #fff;
 }*/
-/* navbar */
-
-.navbar {
-    margin-bottom: 0;
-    background-color: #1C2331;
-    z-index: 9999;
-    border: 0;
-    font-size: 13px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 3px;
-    border-radius: 0;
-    text-indent: 0.5em;
-}
-
-.navbar li a, .navbar .navbar-brand {
-    color: #fff  !important;
-    
-}
-
-ul{
-    list-style: none;
-  }
-/*panel*/
-.panel{
-    padding: 10px 20px 10px 20px;
-    font-size: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-  }
-#projects > .panel{
-    border-radius:0;
-    transition: box-shadow 0.5s;
-    max-height: 300px;
-    padding: 5px 10px 5px 10px;
-    /*box-sizing:*/ 
-}
-
-.panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
-.panel-heading , .panel-heading a{
-    color: #fff !important;
-    background-color: #5bc0de !important;
-    padding: 10px;
-    border-bottom: 1px solid transparent;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #1C2331 !important;
-    background-color: #fff !important;
-}
-
-h1{
-  font-size: 1.6em;
-}
-.lead{
-  font-size: 1.15em;
-}
-.material-icons
-{
-
-  }
-  .card{
-     padding: 10px 20px 10px 20px;
-  }
-
-
-/*------------  list ----------------*/
-
-  /*---fa icons----*/
-  .fa{
-    color: gray;
-  }
-  .fa-github:hover, .fa-bitbucket:hover{
-    color: #000;
-  }
-  .fa-slideshare:hover{
-    color: #000;
-  }
-  .fa-quora:hover{
-    color: #a82400;
-  }
-  .fa-linkedin:hover{
-    color:  #007bb5;
-  }
-  .fa-twitter:hover{
-   color: #55acee;
+ /* navbar */
+ 
+ .navbar {
+     margin-bottom: 0;
+     background-color: #1C2331;
+     z-index: 9999;
+     border: 0;
+     font-size: 13px !important;
+     line-height: 1.42857143 !important;
+     letter-spacing: 3px;
+     border-radius: 0;
+     text-indent: 0.5em;
  }
-  .fa-facebook:hover{
-    color: #3b5998;
-  }
-  .fa-pinterest:hover{
-    color:  #cb2027;
-  }
-  .fa-google-plus-square:hover{
-    color: #d34836;
-  }
-  .fa-tumblr:hover{
-      color: #32506d;
-  } 
-  #projects img{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.col-md-4 img, .col-xs-4 img{
-  padding: 3px;
-}
-  /*--copyright ---*/
-  #copyright
-  {
-    background-color: #000;
-    align-self: center;
-    overflow: hidden;
-    padding: 3em 0em;
-    border-top: 1px solid rgba(0,0,0,0.08);
-  }
-  
-  #copyright span
-  {
-    display: block;
-    letter-spacing: 0.20em;
-    line-height: 2em;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.80em;
-    color: #fff;
-  }
-  
-  #copyright a
-  {
-    text-decoration: none;
-    color: #fff;
-  }
-/*footer*/
-#copyright .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-/*animate*/
-.slideanim {visibility:hidden;}
-.slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    /* The duration of the animation */
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible;
-}
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
+ 
+ .navbar li a,
+ .navbar .navbar-brand {
+     color: #fff !important;
+ }
+ 
+ ul {
+     list-style: none;
+ }
+ /*panel*/
+ 
+ .panel {
+     padding: 10px 20px 10px 20px;
+     font-size: 15px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ #projects > .panel {
+     border-radius: 0;
+     transition: box-shadow 0.5s;
+     max-height: 300px;
+     padding: 5px 10px 5px 10px;
+     /*box-sizing:*/
+ }
+ 
+ .panel:hover {
+     box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+ }
+ 
+ .panel-heading,
+ .panel-heading a {
+     color: #fff !important;
+     background-color: #5bc0de !important;
+     padding: 10px;
+     border-bottom: 1px solid transparent;
+ }
+ 
+ .navbar-nav li a:hover,
+ .navbar-nav li.active a {
+     color: #1C2331 !important;
+     background-color: #fff !important;
+ }
+ 
+ h1 {
+     font-size: 1.6em;
+ }
+ 
+ .lead {
+     font-size: 1.15em;
+ }
+ 
+ .material-icons {}
+ 
+ .card {
+     padding: 10px 20px 10px 20px;
+ }
+ /*------------  list ----------------*/
+ /*---fa icons----*/
+ 
+ .fa {
+     color: gray;
+ }
+ 
+ .fa-github:hover,
+ .fa-bitbucket:hover {
+     color: #000;
+ }
+ 
+ .fa-slideshare:hover {
+     color: #000;
+ }
+ 
+ .fa-quora:hover {
+     color: #a82400;
+ }
+ 
+ .fa-linkedin:hover {
+     color: #007bb5;
+ }
+ 
+ .fa-twitter:hover {
+     color: #55acee;
+ }
+ 
+ .fa-facebook:hover {
+     color: #3b5998;
+ }
+ 
+ .fa-pinterest:hover {
+     color: #cb2027;
+ }
+ 
+ .fa-google-plus-square:hover {
+     color: #d34836;
+ }
+ 
+ .fa-tumblr:hover {
+     color: #32506d;
+ }
+ 
+ #projects img {
+     display: inline-block;
+     vertical-align: middle;
+ }
+ 
+ .col-md-4 img,
+ .col-xs-4 img {
+     padding: 3px;
+ }
+ /*--copyright ---*/
+ 
+ #copyright {
+     background-color: #000;
+     align-self: center;
+     overflow: hidden;
+     padding: 3em 0em;
+     border-top: 1px solid rgba(0, 0, 0, 0.08);
+ }
+ 
+ #copyright span {
+     display: block;
+     letter-spacing: 0.20em;
+     line-height: 2em;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 0.80em;
+     color: #fff;
+ }
+ 
+ #copyright a {
+     text-decoration: none;
+     color: #fff;
+ }
+ /*footer*/
+ 
+ #copyright .glyphicon {
+     font-size: 20px;
+     margin-bottom: 20px;
+     color: #fff;
+ }
+ 
+ #twitter .btn {
+     background-color: #55acee;
+     color: #fff;
+     text-decoration: none;
+ }
+ 
+ #twitter .btn i {
+     color: #fff !important;
+ }
+ 
+ #education h1 i,
+ #skills h1 i,
+ #projects h1 i,
+ #cv a i,
+ #interests i {
+     background: none repeat scroll 0 0 #5bc0de;
+     border-radius: 50%;
+     box-shadow: 0 0 0 9px rgba(60, 130, 148, 0.14901960784313725);
+     display: block;
+     font-size: 32px;
+     height: 50px;
+     line-height: 50px;
+     margin: 2px auto;
+     text-align: center;
+     width: 50px;
+     cursor: unset;
+     color: #fff;
+ }
+ 
+ #education h1 i:hover,
+ #skills h1 i:hover,
+ #projects h1 i:hover,
+ #cv a i:hover,
+ #interests i:hover {
+     box-shadow: 0 0 0 14px rgba(60, 130, 148, 0.14901960784313725);
+ }
+ 
+ #cv a i {
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ #cv a:hover {
+     text-decoration: none;
+ }
+ 
+ #interests p {
+     font-size: 18px;
+ }
+ /*animate*/
+ 
+ .slideanim {
+     visibility: hidden;
+ }
+ 
+ .slide {
+     /* The name of the animation */
+     animation-name: slide;
+     -webkit-animation-name: slide;
+     /* The duration of the animation */
+     animation-duration: 1s;
+     -webkit-animation-duration: 1s;
+     /* Make the element visible */
+     visibility: visible;
+ }
+ /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+ 
+ @keyframes slide {
+     0% {
+         opacity: 0;
+         transform: translateY(70%);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0%);
+     }
+ }
+ 
+ @-webkit-keyframes slide {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateY(70%);
+     }
+     100% {
+         opacity: 1;
+         -webkit-transform: translateY(0%);
+     }
+ }
