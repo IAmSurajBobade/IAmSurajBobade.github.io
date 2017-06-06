@@ -8,12 +8,16 @@
       font-size: 15px;
  }
 
- #home a {
-     color: #000;
- }
-
  .container {
      font-size: 15px;
+     border-radius: 0px;
+ }
+
+.btn, a{
+    border-radius: 0px !important;
+}
+ .div{
+    border-radius: 0px;
  }
 
  h1 > .fa {
@@ -54,8 +58,8 @@
  }
 
  .navbar-custom .navbar-toggle {
-     background-color: #5bc0de;
-     border-color: #56B8D3;
+     background-color: #18BC9C;
+     border-color: #18BC9C;
      color: white;
      font-size: 12px;
  }
@@ -66,7 +70,7 @@
 
  .navbar-custom .navbar-toggle:hover,
  .navbar-custom .navbar-toggle:focus {
-     background-color: #5bc0de;
+     background-color: #18BC9C;
  }
 
  .navbar-nav li a:hover,
@@ -99,13 +103,20 @@
  }
   /* -------------------------- end of header section-------------------------------------------------- */
 
+#home{
+    background-color: #2C3E50;
+    color: #fff;
+}
+#home   a{
+        color: #fff;
+    }
   /*----------------------------Education---------------------------------------------------------------*/
  #edu {
      background-color: #fff;
  }
  #education .school,
  #education .school a {
-     color: #3AADAF;
+     color: #18BC9C;
  }
 
  /*---------------------------- end of Education section------------------------------------------------*/
@@ -128,6 +139,12 @@
  /*----------------------------end of Skills section------------------------------------------------------*/
 
  /*----------------------------Resume --------------------------------------------------------------------*/
+ #cv{
+    background-color: #fff;
+    border-width: 6px;
+    border-style: double;
+    border-color: #18BC9C;
+ }
  #cv a i {
      color: #fff;
      text-decoration: none;
@@ -141,16 +158,42 @@
  /*----------------------------end of Resume section-------------------------------------------------------*/
 
  /*----------------------------Interests ------------------------------------------------------------------*/
+ #interests{
+    background-color: #2C3E50;
+    color: #fff;
+ }
  #interests p {
      font-size: 18px;
+     font-weight: 600;
+ }
+ #interests .subhead{
+    font-weight: 300 !important;
+ }
+ #interests .fa{
+    background-color: #fff;
+    color: #2C3E50;
+ }
+ #interests i {
+    height: 80px !important;
+    width: 80px !important;
+    line-height: 80px !important;
+    font-size: 40px !important;
+    vertical-align: middle;
+    box-shadow: 0 0 0 12px rgba(9, 75, 61, 0.14901960784313725);
  }
  /*-----------------------------end of interests section---------------------------------------------------*/
 
 /*------------------------------Projects ------------------------------------------------------------------*/
+  #projects{
+    background-color: #18BC9C;
+  }
   #projects img {
      display: inline-block;
      vertical-align: middle;
- }
+  }
+  #projects h1, #projects .lead{
+    color: #fff;
+  }
  /*---------------------------- end of projects section ---------------------------------------------------*/
 
  /*-----------------------------Panel----------------------------------------------------------------------*/
@@ -173,7 +216,7 @@
  .panel-heading,
  .panel-heading a {
      color: #fff !important;
-     background-color: #5bc0de !important;
+     background-color: #2C3E50 !important;
      padding: 5px;
      border-bottom: 1px solid transparent;
  }
@@ -186,7 +229,7 @@
  /*--------------------------------------modal-----------------------------------------------------------------*/
  .modalbtn {
      border-radius: 0px;
-     background-color: #5bc0de;
+     background-color: #18BC9C;
      color: #fff;
      font-size: 16px;
  }
@@ -269,9 +312,9 @@
  #projects h1 i,
  #cv a i,
  #interests i {
-     background: none repeat scroll 0 0 #5bc0de;
+     background: none repeat scroll 0 0 #18BC9C;
      border-radius: 50%;
-     box-shadow: 0 0 0 9px rgba(60, 130, 148, 0.14901960784313725);
+     box-shadow: 0 0 0 9px rgba(20, 159, 131, 0.14901960784313725);
      display: block;
      font-size: 32px;
      height: 50px;
@@ -292,6 +335,28 @@
  }
 
   /*--------------------------------end of fa-icons section--------------------------------------------------*/
+
+/*--------------------------------- contact -------------------------------------------------*/
+#email{
+    color: #fff;
+}
+#send{
+    background-color: #18BC9C;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+textarea.form-control {
+    height: 130px;
+    margin-right: 20px;
+}
+textarea.form-control, input.form-control{
+    margin: 5px auto;
+}
+.form-control{
+    border-radius: 0px;
+}
+ /*--------------------------------- end of contact section------------------ -------------------------------------------------*/
 
  /*---------------------------------copyright ---------------------------------------------------------------*/
 
@@ -326,13 +391,28 @@
  /*--------------------------------- end of copyright section -------------------------------------------------*/
 
  /*--------------------------------- Badges------------------ -------------------------------------------------*/
+#badges{
+    background-color: #464646;
+}
+#triangle{
+    background-color: #464646;
+}
+/*#curveDownColor path {
+    fill: #F5F5F5;
+    stroke: #F5F5F5;
+}
+*/#bigTriangleColor path{
+    fill: #F5F5F5;
+    stroke: #F5F5F5;
+}
  #twitter .btn {
      background-color: #55acee;
      color: #fff;
+     border-radius: 0px;
      text-decoration: none;
      margin: 3px;
+     width: 208px !important;
  }
-
  #twitter .btn i {
      color: #fff !important;
  }
