@@ -43,7 +43,7 @@
     border-right: none;
     border-left: none;
     border-top: 1px solid #8b8b8b;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 40px auto;
     max-width: 400px;
     position: relative;
 }
@@ -61,6 +61,9 @@ hr:after {
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
+}
+#education hr,#skills hr{
+    margin: 0 auto 30px auto;
 }
   /*------------------------ end of Global rules-------------------------------------------------*/
 
@@ -137,6 +140,7 @@ hr:after {
   /*----------------------------Education---------------------------------------------------------------*/
  #edu {
      background-color: #fff;
+     color: #393939;
  }
  #education .school,
  #education .school a {
@@ -144,7 +148,6 @@ hr:after {
  }
 
  /*---------------------------- end of Education section------------------------------------------------*/
-
   /*----------------------------Skils-------------------------------------------------------------------*/
  #skills svg {
      width: 50px;
@@ -165,6 +168,7 @@ hr:after {
  /*----------------------------Resume --------------------------------------------------------------------*/
  #cv{
     background-color: #fff;
+    color: #393939;
     border-width: 6px;
     border-style: double;
     border-color: #18BC9C;
@@ -226,8 +230,14 @@ hr:after {
   }
  /*---------------------------- end of projects section ---------------------------------------------------*/
 
- /*-----------------------------Panel----------------------------------------------------------------------*/
- #organizations .panel, #courses .panel{
+ /*---------------------------- Organizations and courses -------------------------------------------------------------*/
+ h4{
+    font-size: 17px;
+ }
+ #organizations i{
+    color: gray;
+ }
+ #organizations .panel, #courses .panel, #volunteer .panel{
     background-color: #828282;
     color: #fff;
  }
@@ -235,7 +245,7 @@ hr:after {
     background-color: rgb(193, 33, 38);
  }
   #organizations #org-2 .panel:hover{
-    background-color: rgb(60, 30, 93);
+    background-color: rgb(67, 137, 127);
  }
   #organizations #org-3 .panel:hover{
     background-color: rgb(19, 37, 48);
@@ -247,10 +257,10 @@ hr:after {
     background-color: rgb(60, 30, 93);
   }
   #courses #cor-2 .panel:hover{
-    background-color: rgb(21, 159, 213);
+    background-color: rgb(35, 111, 64);
   }
   #courses #cor-3 .panel:hover{
-    background-color: rgb(35, 111, 64);
+    background-color: rgb(17, 176, 176);
   }
   #courses #cor-4 .panel:hover{
     background-color:  rgb(19, 37, 48);
@@ -265,11 +275,30 @@ hr:after {
     background-color: rgb(138, 30, 4);
   }
   #courses #cor-8 .panel:hover{
-    background-color: rgb(252, 212, 50);
+    background-color: rgb(252, 198, 59);
   }
   #courses #cor-9 .panel:hover{
     background-color: rgb(67, 137, 127);
   }
+  #volunteer #vol-1 .panel:hover{
+    background-color: rgb(67, 137, 127);
+  }
+  #volunteer #vol-2 .panel:hover{
+    background-color: rgb(19, 37, 48);
+  }
+  #volunteer #vol-3 .panel:hover{
+    background-color: rgb(138, 30, 4);
+  }
+  #volunteer #vol-4 .panel:hover{
+    background-color: rgb(35, 111, 64);
+  }
+  #volunteer #vol-5 .panel:hover{
+    background-color: rgb(193, 33, 38);
+  }
+ /*---------------------------- end of organizations and courses section ----------------------------------------------*/
+
+ /*-----------------------------Panel----------------------------------------------------------------------*/
+
  .panel {
      padding: 10px 20px 10px 20px;
      font-size: 15px;
@@ -304,9 +333,14 @@ hr:after {
  /* ----------------------------end of panel section--------------------------------------------------------*/
 
  /*--------------------------------------modal-----------------------------------------------------------------*/
+ #knowmore{
+    background-color: #18bc9c;
+    color: #fff;
+    margin-top: 20px;
+}
  .modalbtn {
      border-radius: 0px;
-     background-color: #18BC9C;
+     background-color: #2C3E50;
      color: #fff;
      font-size: 16px;
  }
@@ -478,10 +512,12 @@ textarea.form-control, input.form-control{
     fill: #F5F5F5;
     stroke: #F5F5F5;
 }
-*/#bigTriangleColor path{
+*/
+#bigTriangleColor path{
     fill: #F5F5F5;
     stroke: #F5F5F5;
 }
+
  #twitter .btn {
      background-color: #55acee;
      color: #fff;
@@ -532,6 +568,65 @@ textarea.form-control, input.form-control{
      }
      to {
          bottom: 0;
+         opacity: 1
+     }
+ }
+
+ .animate-left {
+     position: relative;
+     -webkit-animation-name: animateleft;
+     -webkit-animation-duration: 2s;
+     animation-name: animateleft;
+     animation-duration: 2s
+ }
+
+ @-webkit-keyframes animateleft {
+     from {
+         left: -100px;
+         opacity: 0
+     }
+     to {
+         left: 0px;
+         opacity: 1
+     }
+ }
+
+ @keyframes animateleft {
+     from {
+         left: -100px;
+         opacity: 0
+     }
+     to {
+         left: 0;
+         opacity: 1
+     }
+ }
+ .animate-right {
+     position: relative;
+     -webkit-animation-name: animateright;
+     -webkit-animation-duration: 2s;
+     animation-name: animateright;
+     animation-duration: 2s
+ }
+
+ @-webkit-keyframes animateright {
+     from {
+         right: -100px;
+         opacity: 0
+     }
+     to {
+         right: 0px;
+         opacity: 1
+     }
+ }
+
+ @keyframes animateright {
+     from {
+         right: -100px;
+         opacity: 0
+     }
+     to {
+         right: 0;
          opacity: 1
      }
  }
