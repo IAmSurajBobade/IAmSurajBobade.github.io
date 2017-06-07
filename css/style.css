@@ -38,6 +38,30 @@
  .lead {
      font-size: 1.15em;
  }
+ hr {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #8b8b8b;
+    margin: 0 auto 50px auto;
+    max-width: 400px;
+    position: relative;
+}
+hr:after {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    content: "";
+    bottom: -4px;
+    left: 50%;
+    margin-left: -5px;
+    background-color: #8b8b8b;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
   /*------------------------ end of Global rules-------------------------------------------------*/
 
   /* ------------------------navbar------------------------------------------------------------- */
@@ -194,13 +218,63 @@
   #projects h1, #projects .lead{
     color: #fff;
   }
+  #projects hr{
+    border-color: #fff;
+  }
+  #projects hr:after{
+    background-color: #fff;
+  }
  /*---------------------------- end of projects section ---------------------------------------------------*/
 
  /*-----------------------------Panel----------------------------------------------------------------------*/
+ #organizations .panel, #courses .panel{
+    background-color: #828282;
+    color: #fff;
+ }
+  #organizations #org-1 .panel:hover{
+    background-color: rgb(193, 33, 38);
+ }
+  #organizations #org-2 .panel:hover{
+    background-color: rgb(60, 30, 93);
+ }
+  #organizations #org-3 .panel:hover{
+    background-color: rgb(19, 37, 48);
+  }
+  #organizations #org-4 .panel:hover{
+    background-color: rgb(239, 61, 30);
+  }
+  #courses #cor-1 .panel:hover{
+    background-color: rgb(60, 30, 93);
+  }
+  #courses #cor-2 .panel:hover{
+    background-color: rgb(21, 159, 213);
+  }
+  #courses #cor-3 .panel:hover{
+    background-color: rgb(35, 111, 64);
+  }
+  #courses #cor-4 .panel:hover{
+    background-color:  rgb(19, 37, 48);
+  }
+  #courses #cor-5 .panel:hover{
+    background-color: rgb(101, 172, 30);
+  }
+  #courses #cor-6 .panel:hover{
+    background-color: rgb(193, 33, 38);
+  }
+  #courses #cor-7 .panel:hover{
+    background-color: rgb(138, 30, 4);
+  }
+  #courses #cor-8 .panel:hover{
+    background-color: rgb(252, 212, 50);
+  }
+  #courses #cor-9 .panel:hover{
+    background-color: rgb(67, 137, 127);
+  }
  .panel {
      padding: 10px 20px 10px 20px;
      font-size: 15px;
      background-color: #fff;
+     border-radius: 0px;
  }
 
  #projects > .panel {
@@ -208,9 +282,6 @@
      max-height: 300px;
      padding: 5px 10px 5px 10px;
      /*box-sizing:*/
- }
- .panel:hover {
-     box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
  }
 
  .panel-heading,
@@ -426,43 +497,7 @@ textarea.form-control, input.form-control{
  /*--------------------------------- end of Badges section -------------------------------------------------*/
 
  /*--------------------------------animations-------------------------------------------------------------------*/
- .slideanim {
-     visibility: hidden;
- }
 
- .slide {
-     /* The name of the animation */
-     animation-name: slide;
-     -webkit-animation-name: slide;
-     /* The duration of the animation */
-     animation-duration: 1s;
-     -webkit-animation-duration: 1s;
-     /* Make the element visible */
-     visibility: visible;
- }
- /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-
- @keyframes slide {
-     0% {
-         opacity: 0;
-         transform: translateY(70%);
-     }
-     100% {
-         opacity: 1;
-         transform: translateY(0%);
-     }
- }
-
- @-webkit-keyframes slide {
-     0% {
-         opacity: 0;
-         -webkit-transform: translateY(70%);
-     }
-     100% {
-         opacity: 1;
-         -webkit-transform: translateY(0%);
-     }
- }
 /* Add animation to "page content" */
 
  .animate-bottom {
