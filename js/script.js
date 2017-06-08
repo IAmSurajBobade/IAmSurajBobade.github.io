@@ -27,4 +27,4 @@ $(window).scroll(function() {
 })
 $(function(){
 	$('img').imgPreload()
-})
+});
