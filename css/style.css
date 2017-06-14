@@ -38,6 +38,13 @@
  .lead {
      font-size: 1.15em;
  }
+ #date{
+    font-size: 13px;
+    color: #2C3E50;
+ }
+ #date i{
+    color: #2C3E50;
+ }
  hr {
     border-bottom: none;
     border-right: none;
