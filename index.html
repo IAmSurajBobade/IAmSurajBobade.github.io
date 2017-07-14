@@ -22,8 +22,6 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    >
-    <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script type="text/javascript" src='js/loadImg.js'></script>
     <script src="js/script.js"></script>
@@ -100,6 +98,10 @@
                     <p class="text-right"><i>Website last updated on 14<sup>th</sup> July, 2017.</i></p>
                 </div>
             </div>
+            <div class="animate-bottom">
+                <p class="text-right"><i>Website last updated on 7<sup>th</sup> June, 2017.</i></p>
+            </div>
+           
         </div>
     </div>
     <!-- end of about -->
@@ -125,8 +127,8 @@
                         <li>
                             <div class="row">
                                 <div class="col-xs-10">
-                                    <h4 class="h4-responsive school text-right"> <a href="http://www.adjjc.com/">A. D. Joshi Junior College, Solapur</a> <i class="fa fa-university" aria-hidden="true"></i></h4>
-                                    <p class="text-right"><i class="fa fa-calendar" aria-hidden="true"></i> 2011 – 2013
+                                    <h4 class="h4-responsive school"> <i class="fa fa-university" aria-hidden="true"></i> <a href="http://www.adjjc.com/">A. D. Joshi Junior College, Solapur</a></h4>
+                                    <p><span id="date"><i class="fa fa-calendar" aria-hidden="true"></i> 2011 – 2013</span>
                                         <br> HSC, Computer Science
                                     </p>
                                 </div>
@@ -165,11 +167,11 @@
                             <img src="images/ubuntu.svg" alt="Ubuntu" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Ubuntu">
                         </div>
                         <div class="col-md-4 col-xs-4">
-                            <img src="images/android.svg" alt="Android" class="img-responsive" style="width: 60px; height: 60px;" data-toggle="tooltip" data-placement="right" title="Android" />
-                            <img src="images/github.svg" alt="Github" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Github" />
-                            <img src="images/oracle.png" alt="Oracle" style="width: 60px;height: 60px;" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Oracle" />
-                            <img src="images/firebase.svg" alt="Firebase" style="width: 60px;height: 60px;" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Firebase" />
-                            <img src="images/windows.svg" alt="Windows" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Windows">
+                            <img src="images/android.svg" alt="Android" class="img-responsive" style="width: 60px; height: 60px;" data-toggle="tooltip" data-placement="left" title="Android" />
+                            <img src="images/github.svg" alt="Github" class="img-responsive" data-toggle="tooltip" data-placement="left" title="Github" />
+                            <img src="images/oracle.png" alt="Oracle" style="width: 60px;height: 60px;" class="img-responsive" data-toggle="tooltip" data-placement="left" title="Oracle" />
+                            <img src="images/firebase.svg" alt="Firebase" style="width: 60px;height: 60px;" class="img-responsive" data-toggle="tooltip" data-placement="left" title="Firebase" />
+                            <img src="images/windows.svg" alt="Windows" class="img-responsive" data-toggle="tooltip" data-placement="left" title="Windows">
                         </div>
                     </div>
                     <br>
@@ -178,7 +180,7 @@
                 <!-- Certificates and courses modal -->
                 <div class="col-md-3 animate-right text-center">
                     <div class="panel" id="knowmore">
-                    <ul>
+                    <ul class="text-left">
                         <br>
                         <li> 9 Ceritifications</li>
                         <li> 5 volunteer Experiences</li>
@@ -196,7 +198,7 @@
                                 <div class="modal-body">
                                     <h3>Organizations I worked in</h3>
                                     <hr></hr>
-                                    <div class="row" id="organizations">
+                                    <div class="row animate-left" id="organizations">
                                         <div class="col-md-6">
                                             <div id="org-1">
                                                 <div class="panel">
@@ -226,13 +228,13 @@
                                                     <h4 data-toggle="collapse" data-target="#org4">ACM Chapter, WCE Sangli<span id="plus" class="glyphicon glyphicon-plus pull-right"></span></h4>
                                                     <h5> Technical Expert Starting January 2016</h5>
                                                 </div>
-                                                <p id="org4" class="collapse"> <a href="http://www.wce.acm.org"><span class="glyphicon glyphicon-globe" data-toggle="tooltip" data-placement="right" title="http://www.wce.acm.org"></span></a></p>
+                                                <p id="org4" class="collapse"> The ACM student chapter conducts various technical & non-technical activities for overall development of the students of the institute <a href="http://www.wce.acm.org"> <span class="glyphicon glyphicon-globe" data-toggle="tooltip" data-placement="right" title="http://www.wce.acm.org"></span></a></p>
                                             </div>
                                         </div>
                                     </div>
                                     <h3>Ceritifications and Courses</h3>
                                     <hr></hr>
-                                    <div class="row" id="courses">
+                                    <div class="row animate-right" id="courses">
                                         <div class="col-md-6">
                                             <div id="cor-1">
                                                 <div class="panel">
@@ -294,12 +296,12 @@
                                     </div>
                                     <h3>Volunteer Experiences</h3>
                                     <hr></hr>
-                                    <div class="row" id="volunteer">
+                                    <div class="row animate-left" id="volunteer">
                                         <div class="col-md-6">
                                             <div id="vol-1">
                                                 <div class="panel">
                                                     <h4 data-toggle="collapse" data-target="#vol1">Team Lead SITAC (Social I.T. Awareness Campaign) by ACSES <span id="plus" class="glyphicon glyphicon-plus pull-right"></span> </h4>
-                                                    <h5>February 2016 – March 2016 (2 months)Social Services</h5>
+                                                    <h5>February 2016 – March 2016 (2 months) | Social Services</h5>
                                                 </div>
                                                 <p id="vol1" class="collapse">SITAC is an event conducted by ACSES, in which we go to nearby schools and teach students about various I.T. technologies so as to make them aware about basic/ new technologies in the field of I.T. and encourage them to work in the same.
                                                 </p>
@@ -307,18 +309,18 @@
                                             <div id="vol-2">
                                                 <div class="panel">
                                                     <h4 data-toggle="collapse" data-target="#vol2">In-charge Club Service Director Association of Computer Science and Engineering Students (ACSES)<span id="plus" class="glyphicon glyphicon-plus pull-right"></span></h4>
-                                                    <h5>January 2016Science and Technology</h5>
+                                                    <h5>January 2016 | Science and Technology</h5>
                                                 </div>
                                                 <p id="vol2" class="collapse">Conducted a Hands-On Club Service on "Version Control System, Git, GitHub"
-                                                    <a href="http://www.wcepace.in"><span class="glyphicon glyphicon-globe" data-toggle="tooltip" data-placement="right" title="http://www.wcepace.in"></span></a></p>
+                                                   </p>
                                             </div>
                                             <div id="vol-3">
                                                 <div class="panel">
                                                     <h4 data-toggle="collapse" data-target="#vol3">Rotaract Club of WCE, Sangli <span id="plus" class="glyphicon glyphicon-plus pull-right"></span></h4>
-                                                    <h5>July 2013 – September 2013 (3 months)Children</h5>
+                                                    <h5>July 2013 – September 2013 (3 months) | Children</h5>
                                                 </div>
                                                 <p id="vol3" class="collapse">The event RAINBOW 2K13 was organised by 'ROTARACT Club of WCE, Sangli' under the 'Community Service Avenue' on 14th and 15th September 2013. Over 2100+ students from various schools participated in the event.
-                                                    <a href="http://www.wcepace.in"><span class="glyphicon glyphicon-globe" data-toggle="tooltip" data-placement="right" title="http://www.wcepace.in"></span></a></p>
+                                                    <a href="http://wcerotaract.org/rainbow/"><span class="glyphicon glyphicon-globe" data-toggle="tooltip" data-placement="right" title="http://wcerotaract.org/rainbow/"></span></a></p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -332,7 +334,7 @@
                                             <div id="vol-5">
                                                 <div class="panel">
                                                     <h4 data-toggle="collapse" data-target="#vol5">Member of Organizing Committee Association of Computer Science and Engineering Students (ACSES)<span id="plus" class="glyphicon glyphicon-plus pull-right"></span></h4>
-                                                    <h5>September 2015Education</h5>
+                                                    <h5>September 2015 | Education</h5>
                                                 </div>
                                                 <p id="vol5" class="collapse"> Conducted a 'workshop on C' for newly admitted first year students of batch 2015. Organizer
                                                 </p>
@@ -476,7 +478,7 @@
                     <p class="lead text-center">I am Proffessional</p>
                     <hr></hr>
                     <p class="text-center">
-                        <a href="SurajBobade_Resume.pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://drive.google.com/file/d/0B7cB9yBFrghrSENwUEJGbVREb0E/"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
                         <br>Have a Look at my CV. </p>
                 </div>
             </div>
@@ -552,7 +554,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="E-Mail" placeholder="Email " id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" name="E-Mail" placeholder="Email " id="mail" required data-validation-required-message="Please enter your email address.">
                                     <p class="danger-block text-danger"></p>
                                 </div>
                                 <div class="form-group">

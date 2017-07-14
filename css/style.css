@@ -38,6 +38,13 @@
  .lead {
      font-size: 1.15em;
  }
+ #date{
+    font-size: 13px;
+    color: #2C3E50;
+ }
+ #date i{
+    color: #2C3E50;
+ }
  hr {
     border-bottom: none;
     border-right: none;
@@ -64,6 +71,22 @@ hr:after {
 }
 #education hr,#skills hr{
     margin: 0 auto 30px auto;
+}
+.tooltip{
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:3px;
+    font-size: 16px;
+}
+
+.tooltip-inner{
+    height:25px;
+    padding:3px;
+    background-color: #2C3E50;
+    color:#fff;
+    text-align:center;
 }
   /*------------------------ end of Global rules-------------------------------------------------*/
 
@@ -337,6 +360,7 @@ hr:after {
     background-color: #18bc9c;
     color: #fff;
     margin-top: 20px;
+
 }
  .modalbtn {
      border-radius: 0px;
@@ -630,4 +654,16 @@ textarea.form-control, input.form-control{
          opacity: 1
      }
  }
+
+
+@keyframes pulse {
+  0% {
+    background-color: #2C3E50;
+  }
+  100% {
+    background-color: #18BC9C;
+  }
+}
+
+
  /*--------------------------------end of animations----------------------------------------------------------*/
