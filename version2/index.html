@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sample Web</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper teal">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">Profile</a></li>
+        <li><a href="">Experience</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Resume</a></li>
+        <li><a href="">Contact</a>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href=""><i class="material-icons red-text">face</i> Profile</a></li>
+        <li><a href=""><i class="material-icons blue-text">business_center</i> Experience</a></li>
+        <li><a href=""><i class="material-icons green-text">school</i> Education</a></li>
+        <li><a href=""><i class="large material-icons orange-text">insert_chart</i> Skills</a></li>
+        <li><a href=""><i class="large material-icons teal-text">apps</i> Projects</a></li>
+        <li><a href=""><i class="large material-icons indigo-text">description</i> Resume</a></li>
+        <li><a href=""><i class="large material-icons green-text">call</i> Contact</a>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card-panel blue-grey">
+          <span class="card-title white-text">Card Title</span>
+          <div class="row valign-wrapper">
+            <div class="col s4 m4 l4 center">
+              <img src="images/yuna.jpg" alt="" class="circle responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s8 m8 l8">
+              <span class="white-text">
+
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+              <span id="age"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <div class="card-panel blue-grey">
+          <div class="carousel" data-indicators="true">
+            <a class="carousel-item" href="#one!"><div class="card-panel modal-trigger" href="#modal1">1<br></div></a>
+            <a class="carousel-item" href="#two!"><div class="card-panel modal-trigger" href="#modal1">2</br></div></a>
+            <a class="carousel-item" href="#three!"><div class="card-panel modal-trigger" href="#modal1">3<br></div></a>
+            <a class="carousel-item" href="#four!"><div class="card-panel modal-trigger" href="#modal1">4<br></div></a>
+            <a class="carousel-item" href="#five!"><div class="card-panel modal-trigger" href="#modal1">5<br></div></a>
+          </div>
+        </div>
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <div class="card-panel blue-grey">
+          <div class="carousel" data-indicators="true">
+            <a class="carousel-item" href="#one!"><div class="card-panel">1<br></div></a>
+            <a class="carousel-item" href="#two!"><div class="card-panel">2</br></div></a>
+            <a class="carousel-item" href="#three!"><div class="card-panel">3<br></div></a>
+            <a class="carousel-item" href="#four!"><div class="card-panel">4<br></div></a>
+            <a class="carousel-item" href="#five!"><div class="card-panel">5<br></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <form class="col s10 m8 l6 offset-s1 offset-m2 offset-l3">
+        <div class="card-panel">
+          <div class="row">
+            <div class="input-field col s6 m6 l6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6 m6 l6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m12 l12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m12 l12">
+              <textarea id="icon_prefix2" class="materialize-textarea" data-length="200"></textarea>
+              <label for="icon_prefix2">Message</label>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="tap-target" data-activates="socials">
+      <div class="tap-taget-content">
+        <h1>Hi</h1>
+        <p>Some text</p>
+      </div>
+    </div>
+    <div class="fixed-action-btn" id="socials">
+      <a class="btn-floating btn-large red pulse">
+        <i class="large material-icons">favorite</i>
+      </a>
+      <ul>
+        <li>
+          <a class="btn-floating social fb-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Facebook"
+             href="https://www.facebook.com/IAmSurajBobade">
+             <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social pinterest-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Pinterest"
+             href="https://in.pinterest.com/iamsurajbobade/">
+             <i class="fa fa-pinterest"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social black tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="GitHub"
+             href="https://github.com/IAmSurajBobade">
+             <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social linkedin-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="LinkedIn"
+             href="https://www.linkedin.com/in/IAmSurajBobade">
+             <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social quora-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Quora"
+             href="https://www.quora.com/profile/Suraj-Bobade">
+            <i class="fa fa-quora" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social twitter-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Twitter"
+             href="https://twitter.com/IAmSurajBobade">
+             <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social black tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Bitbuclet"
+             href="https://bitbucket.com/IAmSurajBobade">
+             <i class="fa fa-bitbucket" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social gplus-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Google Plus"
+             href="https://plus.google.com/107398797992823151630">
+             <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social black tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Slideshare"
+             href="http://www.slideshare.net/IAmSurajBobade">
+             <i class="fa fa-slideshare" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating social tumblr-col tooltipped"
+             target="_blank"
+             data-position="left"
+             data-delay="50"
+             data-tooltip="Tumblr"
+             href="https://iamsurajbobade.tumblr.com/">
+             <i class="fa fa-tumblr" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="page-footer teal">
+    <div class="footer-copyright">
+      <div class="container center">
+        © <span class="current-year"></span> All Rights Reserved
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

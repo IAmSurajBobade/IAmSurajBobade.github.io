@@ -1,0 +1,41 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .brand-logo{
+  	margin-left: 10px;
+  }
+  .fb-col{
+    background-color: #3b5998 !important;
+  }
+  .quora-col{
+    background-color: #a82400 !important;
+  }
+  .linkedin-col{
+    background-color: #007bb5 !important;
+  }
+  .twitter-col{
+    background-color: #55acee !important;
+  }
+  .pinterest-col{
+    background-color: #cb2027 !important;
+  }
+  .gplus-col{
+    background-color: #d34836 !important;
+  }
+  .tumblr-col{
+    background-color: #32506d !important;
+  }
+.carousel-item .card-panel{
+  height: 200px;
+}
+.modal{
+  width: 500px;
+  height: 500px;
+}
