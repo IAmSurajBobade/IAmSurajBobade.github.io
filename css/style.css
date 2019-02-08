@@ -1,4 +1,9 @@
 /*--------------------------Global rules---------------------------------------------------*/
+:root {
+  --color-1: #748CAB;
+  --color-2: #2C3E50;
+}
+
  body {
      position: relative;
      max-width: 100%;
@@ -40,10 +45,10 @@
  }
  #date{
     font-size: 13px;
-    color: #2C3E50;
+    color: var(--color-2);
  }
  #date i{
-    color: #2C3E50;
+    color: var(--color-2);
  }
  hr {
     border-bottom: none;
@@ -84,7 +89,7 @@ hr:after {
 .tooltip-inner{
     height:25px;
     padding:3px;
-    background-color: #2C3E50;
+    background-color: var(--color-2);
     color:#fff;
     text-align:center;
 }
@@ -108,8 +113,8 @@ hr:after {
  }
 
  .navbar-custom .navbar-toggle {
-     background-color: #18BC9C;
-     border-color: #18BC9C;
+     background-color: 748CAB;
+     border-color: 748CAB;
      color: white;
      font-size: 12px;
  }
@@ -120,7 +125,7 @@ hr:after {
 
  .navbar-custom .navbar-toggle:hover,
  .navbar-custom .navbar-toggle:focus {
-     background-color: #18BC9C;
+     background-color: 748CAB;
  }
 
  .navbar-nav li a:hover,
@@ -154,7 +159,7 @@ hr:after {
   /* -------------------------- end of header section-------------------------------------------------- */
 
 #home{
-    background-color: #2C3E50;
+    background-color: var(--color-2);
     color: #fff;
 }
 #home   a{
@@ -167,7 +172,7 @@ hr:after {
  }
  #education .school,
  #education .school a {
-     color: #18BC9C;
+     color: 748CAB;
  }
 
  /*---------------------------- end of Education section------------------------------------------------*/
@@ -194,7 +199,7 @@ hr:after {
     color: #393939;
     border-width: 6px;
     border-style: double;
-    border-color: #18BC9C;
+    border-color: 748CAB;
  }
  #cv a i {
      color: #fff;
@@ -210,7 +215,7 @@ hr:after {
 
  /*----------------------------Interests ------------------------------------------------------------------*/
  #interests{
-    background-color: #2C3E50;
+    background-color: var(--color-2);
     color: #fff;
  }
  #interests p {
@@ -222,7 +227,7 @@ hr:after {
  }
  #interests .fa{
     background-color: #fff;
-    color: #2C3E50;
+    color: var(--color-2);
  }
  #interests i {
     height: 80px !important;
@@ -236,7 +241,7 @@ hr:after {
 
 /*------------------------------Projects ------------------------------------------------------------------*/
   #projects{
-    background-color: #18BC9C;
+    background-color: var(--color-1);
   }
   #projects img {
      display: inline-block;
@@ -261,7 +266,7 @@ hr:after {
     color: gray;
  }
  #organizations .panel, #courses .panel, #volunteer .panel{
-    background-color: #828282;
+    background-color: var(--color-1);
     color: #fff;
  }
   #organizations #org-1 .panel:hover{
@@ -344,7 +349,7 @@ hr:after {
  .panel-heading,
  .panel-heading a {
      color: #fff !important;
-     background-color: #2C3E50 !important;
+     background-color: var(--color-2) !important;
      padding: 5px;
      border-radius: 0px;
      border: 0px;
@@ -357,14 +362,14 @@ hr:after {
 
  /*--------------------------------------modal-----------------------------------------------------------------*/
  #knowmore{
-    background-color: #18bc9c;
+    background-color: var(--color-1);
     color: #fff;
     margin-top: 20px;
 
 }
  .modalbtn {
      border-radius: 0px;
-     background-color: #2C3E50;
+     background-color: var(--color-2);
      color: #fff;
      font-size: 16px;
  }
@@ -447,9 +452,9 @@ hr:after {
  #projects h1 i,
  #cv a i,
  #interests i {
-     background: none repeat scroll 0 0 #18BC9C;
+     background: none repeat scroll 0 0 var(--color-1);
      border-radius: 50%;
-     box-shadow: 0 0 0 9px rgba(20, 159, 131, 0.14901960784313725);
+     box-shadow: 0 0 0 9px #CCD5E0;
      display: block;
      font-size: 32px;
      height: 50px;
@@ -476,7 +481,7 @@ hr:after {
     color: #fff;
 }
 #send{
-    background-color: #18BC9C;
+    background-color: var(--color-1);
     color: #fff;
     margin-bottom: 15px;
     border-radius: 0px;
@@ -658,10 +663,10 @@ textarea.form-control, input.form-control{
 
 @keyframes pulse {
   0% {
-    background-color: #2C3E50;
+    background-color: var(--color-2);
   }
   100% {
-    background-color: #18BC9C;
+    background-color: 748CAB;
   }
 }
 
