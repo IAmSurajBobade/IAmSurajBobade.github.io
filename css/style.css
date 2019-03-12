@@ -80,6 +80,10 @@ hr:after {
     -moz-transform: rotate(45deg);
 }
 
+.text-black{
+  color: black !important;
+}
+
 #education hr,
 #skills hr {
     margin: 0 auto 30px auto;
@@ -366,7 +370,7 @@ header {
 
 /*--------------------------------------modal-----------------------------------------------------------------*/
 #knowmore {
-    background-color: var(--color-1);
+    background-image: linear-gradient(to left, #748cab, #697f9b, #5e738b, #54667c, #4a5a6d);
     color: #fff;
     margin-top: 20px;
 
@@ -544,7 +548,7 @@ input.form-control {
 
 /*--------------------------------- Badges------------------ -------------------------------------------------*/
 #badges {
-    background-color: var(--color-2);
+    background-image: linear-gradient(to left, #2c3e50, #475767, #63707e, #818b96, #9fa7af);
 }
 
 
