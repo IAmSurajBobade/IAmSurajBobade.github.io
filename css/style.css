@@ -1,4 +1,5 @@
 /*--------------------------Global rules---------------------------------------------------*/
+html,
 body {
     position: relative;
     max-width: 100%;
@@ -7,56 +8,32 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-.container {
-    font-size: 15px;
-    border-radius: 0px;
+#landing-page {
+   min-height: 100%;
+   position: relative;
 }
 
-.tooltip {
-    position: absolute;
-    z-index: 1020;
-    display: block;
-    visibility: visible;
-    padding: 3px;
-    font-size: 16px;
-}
-
-/* --------------------------header---------------------------------------------------------------- */
-header {
-    background-image: url('../images/cover5.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-    color: white;
-}
-
-@media (min-width: 768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
-}
-/* -------------------------- end of header section-------------------------------------------------- */
 #containt {
     align-self: center;
     text-align: center;
 }
+
 /*---------------------------------copyright ---------------------------------------------------------------*/
 #copyright {
+    position: absolute;
+    bottom: 0;
     background-color: #000;
-    align-self: flex-end;
     overflow: hidden;
-    padding: 3em 0em;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
+    width: f;
+    height: max-content;
+    padding: 10px;
 }
-
 #copyright span {
     display: block;
     letter-spacing: 0.20em;
@@ -64,17 +41,5 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-size: 0.80em;
-    color: #fff;
-}
-
-#copyright a {
-    text-decoration: none;
-    color: #fff;
-}
-
-#copyright .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #fff;
 }
 /*--------------------------------- end of copyright section -------------------------------------------------*/
