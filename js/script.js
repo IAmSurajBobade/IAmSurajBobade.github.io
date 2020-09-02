@@ -73,13 +73,13 @@ function getAge() {
 
 
 	if ((age.years > 0) && (age.months > 0) && (age.days > 0))
-		ageString = age.years + yearString + ", " + age.months + monthString + ", and " + age.days + dayString + " old.";
+		ageString = age.years + yearString + ", " + age.months + monthString + ", and " + age.days + dayString + " old";
 	else if ((age.years > 0) && (age.months == 0) && (age.days == 0))
-		ageString = age.years + yearString + " old. Happy Birthday to me!!";
+		ageString = age.years + yearString + " old (Happy Birthday to me!!)";
 	else if ((age.years > 0) && (age.months > 0) && (age.days == 0))
-		ageString = age.years + yearString + " and " + age.months + monthString + " old.";
+		ageString = age.years + yearString + " and " + age.months + monthString + " old";
 	else if ((age.years > 0) && (age.months == 0) && (age.days > 0))
-		ageString = age.years + yearString + " and " + age.days + dayString + " old.";
+		ageString = age.years + yearString + " and " + age.days + dayString + " old";
 	else ageString = "Oops! Could not calculate age!";
 
 	return ageString;

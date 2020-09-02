@@ -1,45 +1,27 @@
-/*--------------------------Global rules---------------------------------------------------*/
 html,
 body {
-    position: relative;
-    max-width: 100%;
-    overflow-x: hidden;
-    background: black;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    background-color: black;
+    height: 100vh;
 }
 
-#landing-page {
-   min-height: 100%;
-   position: relative;
+body {
+  display: grid;
+  color: bisque;
+  grid-template-rows: auto 1fr auto;
+  font-family: sans-serif, system-ui;
 }
 
-#containt {
-    align-self: center;
-    text-align: center;
+header {
+  padding: 2rem;
 }
 
-/*---------------------------------copyright ---------------------------------------------------------------*/
-#copyright {
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-    overflow: hidden;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    width: f;
-    height: max-content;
-    padding: 10px;
+main {
+  display: grid;
+  place-items: center;
 }
-#copyright span {
-    display: block;
-    letter-spacing: 0.20em;
-    line-height: 2em;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.80em;
+
+footer {
+  padding: 1rem;
+  text-align: center;
 }
-/*--------------------------------- end of copyright section -------------------------------------------------*/
+
