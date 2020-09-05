@@ -1,11 +1,10 @@
-html,
-body {
+* {
     background-color: black;
     color: bisque;
 }
 
-body .main .footer {
-    height: 100vh;
+body{
+    height: 90vh;
     font-family: sans-serif, system-ui;
     text-align: center;
 
