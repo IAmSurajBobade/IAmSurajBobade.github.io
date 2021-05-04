@@ -1,25 +1,19 @@
 * {
     background-color: black;
     color: bisque;
+    width: auto;
+    height: auto;
 }
 
 body{
-    height: 90vh;
     font-family: sans-serif, system-ui;
-    text-align: center;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-main {
-    grid-column: 4 / 10;
-    grid-row: 4 / 10;  
+footer{
+    justify-content: flex-end;
 }
 
-footer {
-    padding: 1rem;
-    grid-row: 12 / 12;
-    grid-column: 4 / 10;
-}
