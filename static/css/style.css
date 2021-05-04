@@ -1,19 +1,29 @@
 * {
-    background-color: black;
-    color: bisque;
-    width: auto;
-    height: auto;
+  background-color: black;
+  color: white;
+  width: auto;
+  height: auto;
 }
 
-body{
-    font-family: sans-serif, system-ui;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  font-family: sans-serif, system-ui;
+  display: flex;
+  flex-direction: column;
 }
 
-footer{
-    justify-content: flex-end;
+footer {
+  justify-content: flex-end;
 }
 
+.watermark {
+  font-size: 25rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 0.05;
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  -webkit-transform: rotate(-90deg) translateX(50%);
+  transform: rotate(-90deg) translateX(50%);
+  z-index: 5;
+}
