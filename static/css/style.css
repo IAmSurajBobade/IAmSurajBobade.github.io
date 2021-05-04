@@ -1,22 +1,16 @@
-html,
-body {
+* {
     background-color: black;
     color: bisque;
 }
 
-body {
-    height: 100vh;
+body{
+    height: 90vh;
     font-family: sans-serif, system-ui;
     text-align: center;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-}
-
-h1 {
-    grid-column: 4 / 10;
-    grid-row: 4 / 10;  
 }
 
 main {
@@ -29,6 +23,3 @@ footer {
     grid-row: 12 / 12;
     grid-column: 4 / 10;
 }
-
-
-
