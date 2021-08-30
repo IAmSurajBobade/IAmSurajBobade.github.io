@@ -7,13 +7,5 @@
 
 body{
     font-family: sans-serif, system-ui;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer{
-    justify-content: flex-end;
 }
 
