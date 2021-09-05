@@ -1,5 +1,5 @@
 * {
-    background-color: black;
+    background-color: rgb(167, 22, 22);
     color: bisque;
     width: auto;
     height: auto;
@@ -9,3 +9,10 @@ body{
     font-family: sans-serif, system-ui;
 }
 
+#signature{
+    stroke-dasharray: 8000;
+}
+
+#firstname {
+    position: fixed;
+}
